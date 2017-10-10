@@ -1,8 +1,11 @@
 <h1>Seja bem-vindo!</h1>
 
+<%= mostrar_meu_nome %>
+<%= somar_dois(2) %>
+
 <ul>
-    <li><a href="https://rails-pvspaiva.c9users.io/kinds">Tipos</a></li>
-    <li><a href="https://rails-pvspaiva.c9users.io/contacts">Contatos</a></li>
-    <li><a href="https://rails-pvspaiva.c9users.io/adresses">Endereços</a></li>
-    <li><a href="https://rails-pvspaiva.c9users.io/phones">Telefones</a></li>
+    <li><%= link_to "Tipos", kinds_path %></li>
+    <li><%= link_to "Contato", contacts_path %></li>
+    <li><%= link_to "Endereços", addresses_path %></li>
+    <li><%= link_to "Telefones", phones_path %></li>
 </ul>
